@@ -1,0 +1,15 @@
+class powerUp {
+    constructor({position}) {
+        this.position = position,
+        this.radius = 10
+    }
+
+    draw(){
+        c.beginPath()
+        c.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2)
+        c.fillStyle = "lime"
+        c.fill()
+        c.closePath
+    }
+}
+
